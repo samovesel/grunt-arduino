@@ -1,0 +1,29 @@
+{
+  "name": "grunt-arduino",
+  "description": "Arduino IDE Grunt plugin.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/lasselukkari/grunt-arduino",
+  "author": {
+    "name": "Lasse Lukkari",
+    "email": "lasse.lukkari@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lasselukkari/grunt-arduino.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lasselukkari/grunt-arduino/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/lasselukkari/grunt-arduino/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
