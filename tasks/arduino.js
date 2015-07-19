@@ -33,13 +33,13 @@ module.exports = function (grunt) {
 
           if (options.action === 'installBoards') {
             if (options.board.version) {
-              board.push(options.board.version)
+              board.push(options.board.version);
             }
             args.push('--install-boards', board.join(':'));
           } else {
             board.push(options.board.board);
             if (options.board.parameters) {
-              board.push(options.board.parameters)
+              board.push(options.board.parameters);
             }
             args.push('--board', board.join(':'));
           }
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
             libraryParams.push(library.version);
           }
 
-          libraries.push(library.join(':'))
+          libraries.push(library.join(':'));
         });
 
         args.push('--install-library', libraries.join(','));
