@@ -107,7 +107,7 @@ module.exports = function (grunt) {
 
     grunt.log.writeln('Parameters: ' + args.join(' '));
 
-    grunt.util.spawn({
+    child = grunt.util.spawn({
       cmd: path.resolve(options.idePath),
       args: args
     }, function (err, result) {
@@ -127,5 +127,7 @@ module.exports = function (grunt) {
 
       done();
     });
+    child.stdout.pipe(process.stdout);
+    child.stderr.pipe(process.stderr);
   });
 };
